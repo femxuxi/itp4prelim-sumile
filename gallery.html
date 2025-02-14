@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel='stylesheet' href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Femarie Pollescas Sumile</h1>
+    </div>
+
+    <div class="menu">
+      <ul>
+          <li><a class="menu-item" href="aboutme.html"><i class="fas fa-user" style="color: #179fd1;"></i> About ME</a></li>
+          <li><a class="menu-item" href="1styear-1stsem.html"><i class="fas fa-book" style="color: #951aa1;"></i> Subject Taken</a></li>
+          <li><a class="menu-item" href="enrolled.html"><i class="fas fa-university" style="color: #e3e626;"></i> Enrolled</a></li>
+          <li><a class="menu-item" href="contactme.html"><i class="fas fa-phone" style="color: #f09719;"></i> Contact Me</a></li>
+          <li><a class="menu-item" href="myfavs.html"><i class="fas fa-heart" style="color: #ff60c7;"></i> My Favorites</a></li>
+          <li><a class="menu-item" href="gallery.html"><i class="fas fa-images" style="color: #0cd943;"></i> Gallery</a></li>
+      </ul>
+  </div>
+
+<div class="main">
+  <h2>Gallery</h2>
+  <div class="main-content">
+    <div class="aside">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="476350323_977401524356724_6022911475898580122_n.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="472744513_1124283215866982_304869278274966130_n.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="474853524_996157159027106_1101553563176306686_n.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="418536285_696465036033471_5485452316198413851_n.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="476367700_1750596872181143_3778465234122817113_n.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="476601555_1848423989310873_4256922809502367314_n.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="363861714_269064755867946_403920030452038330_n.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="8fea2a20-696d-46af-9c72-06072daeaa78.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="dc4bc326-236a-4a2c-a471-db50d7cfbb71.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="35768ad5-611a-49ca-8136-30c42bc92a7a.jpg" >
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(9)"></span> 
+        <span class="dot" onclick="currentSlide(10)"></span> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2024-2025 ITP4 | All Rights Reserved</p>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
