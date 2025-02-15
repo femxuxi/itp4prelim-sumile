@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     background-color: #ffebf7; 
 }
 
@@ -11,10 +12,8 @@ html, body {
 .header {
     background-color: #dbf3ff;
     color: #000000;
-    font-size: 20px;
-    padding: 8px;
+    padding: 1px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(60, 0, 255, 0.2), 0 2px 5px rgba(0, 0, 0, 0.24);
 }
 
 .menu {
